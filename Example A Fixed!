@@ -1,0 +1,15 @@
+	-- Icecream Cone 001
+	if (cacheFlags == CacheFlag.CACHE_SPEED) then
+		if player:HasCollectible(icyMod.COLLECTIBLE_ICECREAM_CONE) then
+			icyMod.FruityFlavor = "Yup";
+			icyMod.Has001 = "Yup";
+			player.MoveSpeed = player.MoveSpeed + 0.3;	
+			-- debug_text = "got item 001";
+  -- Pure Vanilla 003
+	if (cacheFlags == CacheFlag.CACHE_LUCK) then if (player:HasCollectible(icyMod.COLLECTIBLE_PURE_VANILLA)) then player.Luck = player.Luck + 1;
+    icyMod.Has003 = icyMod.Has003 + 1 end end;
+	if (cacheFlags == CacheFlag.CACHE_SPEED) then if (player:HasCollectible(icyMod.COLLECTIBLE_PURE_VANILLA)) then player.MoveSpeed = player.MoveSpeed + 0.2;
+    icyMod.Has003 = icyMod.Has003 + 1 end end;
+	if icyMod.Has003 == 2 then
+		icyMod.VanillaFlavor = "Yup";
+		-- debug_text = "got item 003";
